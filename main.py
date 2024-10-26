@@ -1,10 +1,10 @@
 """
 Team Member Name (Roll Number) and respective Contribution:
 Darshan Bajeja (2403307): Coding of web and logic part
-S Sreelakshmi: Coding utility functions
-Aditya Ambara Matya: Idea of Project and Content gathering (sports category questions)
-Alladi Samuel Abhishek: Content gathering (India GK category questions)
-Hritik Bansal: Content gathering (Programming category questions)
+S Sreelakshmi (2403130): Coding utility functions
+Aditya Ambara Matya (2403302): Idea of Project and Content gathering (sports category questions)
+Alladi Samuel Abhishek (2403303): Content gathering (India GK category questions)
+Hritik Bansal (2403118): Content gathering (Programming category questions)
 """
 
 import streamlit as st
