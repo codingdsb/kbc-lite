@@ -19,7 +19,7 @@ if not os.path.exists("attempts_history.csv"):
     f.close()
 
 ATTEMPT_HISTORY = get_attempt_history()
-
+st.subheader(f"Played {len(ATTEMPT_HISTORY)} times.")
 
 username = st.text_input("What should we call you? Please enter a username:")
 start_quiz_button = st.button("Start Quiz")
