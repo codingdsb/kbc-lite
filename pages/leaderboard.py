@@ -8,12 +8,12 @@ attempt_history = get_attempt_history()
 
 # sort by points
 attempt_history.sort(key=lambda k: k["points"], reverse=True)
+scores = [attempt["points"] for attempt in attempt_history]
 attempt_history = attempt_history[:10]
 st.dataframe(attempt_history)
 
 # Displaying attempt chart
 
-scores = [attempt["points"] for attempt in attempt_history]
 
 x = [
     0,
