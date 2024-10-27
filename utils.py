@@ -26,7 +26,7 @@ def get_questions():
     def selecting(l1, l2, l3):
         l = []
         indices = []
-        while len(l) < 5:
+        while len(l) < 15:
             index = random.randint(0, len(l1) - 1)
             if index not in indices:
                 l.append(l1[index])
