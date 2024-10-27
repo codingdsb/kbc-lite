@@ -39,9 +39,12 @@ y = [scores.count(score) for score in x]
 
 fig = plt.figure(figsize=(10, 5))
 plt.xticks(x, labels=labels, rotation="vertical")
-plt.plot(x, y, color="green")
+plt.plot(x, y, "o-", color="green")
 plt.xlabel("Points")
 plt.ylabel("Number of people")
+
+for i_x, i_y in zip(x, y):
+    plt.text(i_x, i_y, "{}".format(i_y))
 
 
 plt.title("Leader Board")
