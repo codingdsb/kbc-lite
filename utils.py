@@ -7,7 +7,7 @@ def get_attempt_history():
         lines = f.readlines()
 
         for line in lines:
-            if line.split(","[1]) == "":
+            if line.split(",")[1] == "":
                 continue
             ATTEMPT_HISTORY.append(
                 {
