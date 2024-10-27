@@ -30,5 +30,5 @@ $ pip3 install -r requirements.txt # just use pip instead of pip3 on windows
 
 4. Run the code
 ```bash
-$ streamlit main.py
+$ streamlit run main.py
 ```

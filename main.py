@@ -46,3 +46,29 @@ if start_quiz_button:
 leaderboard_button = st.button("See Leaderboard")
 if leaderboard_button:
     st.switch_page("pages/leaderboard.py")
+
+st.subheader("RULES OF THE QUIZ")
+
+st.write("""
+1. You will be given 15 questions.
+2. Each correct answer adds up to your points and makes your score equal to the points mentioned below:
+    Q1. 1000
+    Q2. 2000
+    Q3. 3000
+    Q4. 5000
+    Q5. 10000
+    Q6. 20000
+    Q7. 40000
+    Q8. 80000
+    Q9. 160000
+    Q10. 320000
+    Q11. 640000
+    Q12. 1250000
+    Q13. 2500000
+    Q14. 5000000
+    Q15. 10000000
+3. If you are above 320000, and give an incorrect answer, you will fall down to 320000 points.
+4. If you are above 10000, and give an incorrect answer, you will fall down to 10000 points.
+5. If you are below 10000, and give an incorrect answer, you will fall down to 0.
+6. You can quit the quiz at any time and get whatever amount of points you have.
+""")
