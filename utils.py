@@ -5,13 +5,17 @@ def get_attempt_history():
     ATTEMPT_HISTORY = []
     with open("attempts_history.csv", "r") as f:
         lines = f.readlines()
+
         for line in lines:
+            if line.split(","[1]) == "":
+                continue
             ATTEMPT_HISTORY.append(
                 {
                     "username": line.split(",")[0],
                     "points": int(line.split(",")[1]),
                 }
             )
+            
     return ATTEMPT_HISTORY
 
 
