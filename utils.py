@@ -7,14 +7,16 @@ def get_attempt_history():
         lines = f.readlines()
 
         for line in lines:
-            if line.split(",")[1] == "":
+            
+            try:
+                ATTEMPT_HISTORY.append(
+                    {
+                        "username": line.split(",")[0],
+                        "points": int(line.split(",")[1]),
+                    }
+                )
+            except:
                 continue
-            ATTEMPT_HISTORY.append(
-                {
-                    "username": line.split(",")[0],
-                    "points": int(line.split(",")[1]),
-                }
-            )
             
     return ATTEMPT_HISTORY
 
