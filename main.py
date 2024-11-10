@@ -1,8 +1,8 @@
 """
 Team Member Name (Roll Number) and respective Contribution:
 1. -----
-2. Hrithik Bansal (2403118): Content gathering (Programming category questions)
-3. Aditya Ambara Matya (2403302): Idea of Project and Content gathering (sports category questions), Alladi Samuel Abhishek (2403303): Idea of project Content gathering (India GK category questions)
+2. -----
+3. Aditya Ambara Matya (2403302): Idea of Project and Content gathering (sports category questions), Alladi Samuel Abhishek (2403303): Idea of project Content gathering (India GK category questions), Hrithik Bansal (2403118): Content gathering (Programming category questions)
 4. S Sreelakshmi (2403130): Coding utility functions
 5. Darshan Bajeja (2403307): Coding of web and logic part
 """
@@ -49,7 +49,8 @@ if leaderboard_button:
 
 st.subheader("RULES OF THE QUIZ")
 
-st.write("""
+st.write(
+    """
 1. You will be given 15 questions.
 2. Each correct answer adds up to your points and makes your score equal to the points mentioned below:
     Q1. 1000
@@ -71,4 +72,5 @@ st.write("""
 4. If you are above 10000, and give an incorrect answer, you will fall down to 10000 points.
 5. If you are below 10000, and give an incorrect answer, you will fall down to 0.
 6. You can quit the quiz at any time and get whatever amount of points you have.
-""")
+"""
+)
