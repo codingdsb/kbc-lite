@@ -42,7 +42,7 @@ def show_question(idx):
     )
 
     if st.button(f"{user_ans} को लॉक किया जाए", key=idx):
-        if user_ans == questions[idx]["answer"]:
+        if user_ans.lower() == questions[idx]["answer"].lower():
             st.session_state.points = index_vs_points[idx]
             st.write(f"Correct! You have {st.session_state.points} points now.")
             if idx < len(questions) - 1:
