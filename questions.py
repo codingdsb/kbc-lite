@@ -449,7 +449,7 @@ programming_questions = [
     {
         "question": "Which language is known as the 'mother of all programming languages'?",
         "options": ["C", "Assembly", "COBOL", "Fortran"],
-        "answer": "Fortran",
+        "answer": "C",
         "category": "Programming",
     },
     {
