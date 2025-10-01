@@ -74,3 +74,5 @@ st.write(
 6. You can quit the quiz at any time and get whatever amount of points you have.
 """
 )
+
+print("Changed")
